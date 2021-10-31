@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* On formate toute la page */
 body {
     --twitter-color: #50b7f5;
     --twitter-background: #e6ecf0;
 }
+/* On définit 2 variables de fond et d'arrière-fond car on va les réutiliser beaucoup de fois*/
 
 .leftmenuOption{
     display: flex;
@@ -15,11 +16,12 @@ body {
     cursor: pointer;
 }
 
+
 .leftmenuOption .material-icons,
 .fa-twitter {
     padding: 20px;
 }
-
+/* paramètres des textes des menus de la gauche */
 .leftmenuOption h2 {
     font : oblique 14px Arial, Helvetica, serif; 
     font-weight: 800px;
@@ -37,7 +39,7 @@ body {
 .leftmenuOption.active {
     color:var(--twitter-color)
 }
-
+/* Cela permet que le logo Twitter soit toujours en bleu et se démarque des autres boutons */
 .leftmenuSearch {
     width: 100%;
     background-color: var(--twitter-color);
@@ -48,7 +50,7 @@ body {
     height: 50px;
     margin-top: 20px;
 }
-
+/* mise en forme du bouton Rechercher en dessous de la barre des options */
 body {
     display: flex;
     height: 100vh;
@@ -57,7 +59,7 @@ body {
     margin-right: auto;
     padding: 0 10px;
 }
-
+/* paramètres du menu latéral gauche avec les options Notifications, compte , menu ... */
 .leftmenu {
     border-right: 1px solid var(--twitter-background);
     flex: 0.2;
@@ -71,7 +73,7 @@ body {
     color: var(--twitter-color);
     font-size: 30px;
 }
-
+/* on redimensionne le logo Twitter car il était trop petit */
 .mid {
     flex: 0.5;
     border-right: 1px solid var(--twitter-background);
@@ -84,6 +86,7 @@ body {
 .mid::-webkit-scrollbar {
     display: none;
 }
+/* on fait "disparaitre" la barre latérale de scrolling */
 
 .midHeader {
     position: sticky;
@@ -126,7 +129,7 @@ body {
     border: none;
     outline:none;
 }
-
+/* paramètre du bouton "Tweet" */
 .midMenuButton {
     background-color: var(--twitter-color);
     border:none;
@@ -143,17 +146,18 @@ body {
     border-radius: 50%;
     height: 40px;
 }
-
+/* avatar du publicateur (moi) */
 .publiAvatar {
     padding: 20px;
 }
-
+/* paramètres des publications */
 .publi {
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid var(--twitter-background);
     padding-bottom: 10px;
 }
+/* mise en forme des publications */
 .publi:hover{
     background-color: var(--twitter-background);
     transition: color 100ms ease-out;
@@ -163,13 +167,14 @@ body {
     object-fit: contain;
     border-radius: 20px;
 }
-
+/* format des images publiées */
 .publiFooter{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     color: gray;
 }
+/* mise en forme des icônes like - retweet - télécharger */
 
 .publiFooter .material-icons:hover {
     cursor: pointer;
@@ -181,6 +186,7 @@ body {
     color:var(--twitter-color);
     margin-right: 5px;
 }
+/* mise en forme du logo "vérifié(e)" */
 
 .publiHeaderVerif {
     font-weight: 600;
@@ -206,7 +212,7 @@ body {
 .rightMenu {
     flex: 0.3;
 }
-
+/* le menu de droite prendra 30% de la page */
 .rightMenuSearch {
     display: flex;
     align-items: center;
@@ -246,7 +252,7 @@ body {
     width:auto;         
     margin:0 auto;
 }
-
+/* ici User est le nom des utilisateurs à qui on vous recommande de suivre dans la barre à droite */
 .userAvatar img {
     border-radius: 50%;
     height: 40px;
@@ -255,13 +261,7 @@ body {
 .userAvatar {
     padding: 20px;
 }
-/*
-.userAvatar:hover {
-    background-color: var(--twitter-background);
-    border-radius: 30px;
-    transition: color 100ms ease-out;
-}
-*/
+
 .twittos {
     display: flex;
     align-items: center;
@@ -299,7 +299,7 @@ body {
 .userInfo {
     vertical-align:inherit;
 }
-
+/* paramètres de la box des tendances */
 .trends {
     display: flexbox;
     align-items: center;
@@ -312,7 +312,10 @@ body {
     border-right: 1px solid var(--twitter-background);
     min-width: 250px;
     flex: 0.2;
-    
+}
+.trends .material-icons:hover{
+    cursor: pointer;
+    color: gray
 }
 
 .trendsHeader {
@@ -343,7 +346,7 @@ body {
     padding: 20px;
     color:var(--twitter-color);
 }
-
+/* bas des utilisateurs recommandées */
 .folowFooter:hover {
     cursor: pointer;
     background-color: var(--twitter-background);
