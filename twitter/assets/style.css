@@ -412,4 +412,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .rightMenu{display: none;}
+    .publiBody{width: 100px;}
+    .publi img{width: 50%;}
+    .publiAvatar img {width: 100%;}
 }
