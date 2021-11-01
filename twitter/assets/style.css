@@ -401,3 +401,15 @@ body {
 @media screen and (min-width: 800px) {
     .folowFooter{display: none;}
 }
+.param {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.param h3{
+    color:grey;
+}
+
+@media screen and (max-width: 800px) {
+    .rightMenu{display: none;}
+}
