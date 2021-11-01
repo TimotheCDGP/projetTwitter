@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 /* On formate toute la page */
+
+/* Tablet Landscape */
+
+
+
 body {
     --twitter-color: #50b7f5;
     --twitter-background: #e6ecf0;
+    display: grid;
 }
 /* On définit 2 variables de fond et d'arrière-fond car on va les réutiliser beaucoup de fois*/
 
@@ -15,6 +21,7 @@ body {
     align-items: center;
     cursor: pointer;
 }
+
 
 
 .leftmenuOption .material-icons,
@@ -27,6 +34,10 @@ body {
     font-weight: 800px;
     font-size: 20px;
     margin-right: 20px;
+}
+
+@media screen and (max-width: 1060px) {
+     .leftmenuOption h2 {display: none} 
 }
 
 .leftmenuOption:hover {
@@ -50,6 +61,9 @@ body {
     height: 50px;
     margin-top: 20px;
 }
+@media screen and (max-width: 1060px) {
+    .leftmenuSearch{max-width: 20%;margin-left: 190px;}
+}
 /* mise en forme du bouton Rechercher en dessous de la barre des options */
 body {
     display: flex;
@@ -59,6 +73,8 @@ body {
     margin-right: auto;
     padding: 0 10px;
 }
+
+
 /* paramètres du menu latéral gauche avec les options Notifications, compte , menu ... */
 .leftmenu {
     border-right: 1px solid var(--twitter-background);
@@ -69,9 +85,19 @@ body {
     padding-right: 20px;
 }
 
+@media screen and (max-width: 1060px) {
+    .leftmenuOption {margin-left: 180px;}
+}
+@media screen and (max-width: 1060px) {
+    .leftmenu {margin-left: -200px}
+}
+
 .fa-twitter {
     color: var(--twitter-color);
     font-size: 30px;
+}
+@media screen and (max-width: 1060px) {
+    .fa-twitter {margin-left: 175px;}
 }
 /* on redimensionne le logo Twitter car il était trop petit */
 .mid {
@@ -81,6 +107,7 @@ body {
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    width: 150%;height: 150%;
 }
 
 .mid::-webkit-scrollbar {
@@ -96,7 +123,9 @@ body {
     border: 1px solid var(--twitter-background);
     padding: 15px 20px;
 }
-
+@media screen and (max-height: 800px) {
+    .midHeader{display: none;}     
+}
 .midHeader h2 {
     font-size: 20px;
     font-weight: 800;
@@ -247,6 +276,12 @@ body {
     flex: 0.2;    
 }
 
+@media screen and (max-width: 1060px) {
+    .trends .material-icons{display: none;}
+}
+@media screen and (max-width: 1060px) {
+    .trends h1{margin-left: 50px;}
+}
 .folowHeader h1 {
     float:none;        
     width:auto;         
@@ -286,7 +321,12 @@ body {
     height: 40px;
     border:none; 
 }
-
+@media screen and (max-width: 1060px) {
+    .userButton{display: none;}
+}
+@media screen and (max-width: 500px) {
+    .trends.twittos{display: none;}
+}
 .userButton:hover {
     cursor: pointer;
     background-color:var(--twitter-color);
@@ -300,8 +340,12 @@ body {
     vertical-align:inherit;
 }
 /* paramètres de la box des tendances */
+
+
+     
+
 .trends {
-    display: flexbox;
+    display: block;
     align-items: center;
     margin-top: 15px;
     margin-left: 20px;
@@ -345,6 +389,7 @@ body {
 .folowFooter {
     padding: 20px;
     color:var(--twitter-color);
+    
 }
 /* bas des utilisateurs recommandées */
 .folowFooter:hover {
@@ -352,4 +397,7 @@ body {
     background-color: var(--twitter-background);
     border-radius: 30px;
     transition: color 100ms ease-out;
+}
+@media screen and (min-width: 800px) {
+    .folowFooter{display: none;}
 }
