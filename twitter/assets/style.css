@@ -13,6 +13,7 @@
 body {
     --twitter-color: #50b7f5;
     --twitter-background: #e6ecf0;
+    --twitter-focus: #1f78af;
     display: grid;
 }
 /* On définit 2 variables de fond et d'arrière-fond car on va les réutiliser beaucoup de fois*/
@@ -180,7 +181,12 @@ body {
     width: 80px;
     height: 40px;
     margin-top: 20px;
-    margin-left: auto;  
+    margin-left: auto;
+}
+
+.midMenuButton:hover {
+    cursor: pointer;
+    background-color: var(--twitter-focus);
 }
 
 .publiAvatar img {
@@ -331,8 +337,11 @@ body {
     border-radius: 20px;
     width: 80px;
     height: 40px;
-    border:none; 
+    border:none;
 }
+/* .userButton text {
+    -----------------------------------------------------------------------
+} */
 @media screen and (max-width: 1060px) {
     .userButton{display: none;}
 }
@@ -424,6 +433,7 @@ body {
 @media screen and (max-width: 800px) {
     .rightMenu{display: none;}
     .publiBody{width: 100px;}
+    .publiBody img {margin-left: 20%;}
     .publi img{width: 50%;}
     .publiAvatar img {width: 100%;}
 }
