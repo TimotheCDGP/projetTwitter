@@ -26,7 +26,7 @@ How to link CSS to your HTML project :
 <link rel="stylesheet" href="assets/style.css">
 ```
 ## 🔣 Fonts
-* [Font Awesome](https://fonts.google.com)
+* [Font Awesome](https://fontawesome.com/v5.15/icons)
 * [Google Fonts](https://fonts.google.com)
 
 How to add these icons to your project
