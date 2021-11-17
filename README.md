@@ -39,7 +39,7 @@ How to add these icons to your project
 ## 🔧 BUG FIXES :
 * Fixed responsive for small devices including : Nokia 3310
 * Fixed a bug where the police was set to default when switching windows [only in 12.25.8 version]
-* Fixed the scrolling color
+* Fixed the scrolling bar color
 * Adjusted the navigation bar size when fullscreen
 * Fixed minor bugs
 * Updated files localization
