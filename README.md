@@ -27,7 +27,7 @@ How to link CSS to your HTML project :
 ```
 ## 🔣 Fonts
 * [Font Awesome](https://fontawesome.com/v5.15/icons)
-* [Google Fonts](https://fonts.google.com)
+* [Google Fonts](https://fonts.google.com/icons)
 
 How to add these icons to your project
 ```html
